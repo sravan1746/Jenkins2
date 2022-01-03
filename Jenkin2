@@ -1,0 +1,19 @@
+ipeline{
+    
+    agent any
+        stages {
+            steps('Build') {
+                echo 'Tester of the build'
+            }
+        }
+         stages {
+            steps('Tester') {
+                echo 'Tester of the build'
+            }
+        }
+        stages {
+            steps('Deploy') {
+                echo 'Tester of the build'
+            }
+        }
+}
